@@ -28,8 +28,11 @@ def process_new_message(
 
     log.warning("[ ] Start processing message (expensive task!) %r", body)
     start_time = time.time()
+
+    number = int(body[-2:])
+    is_odd = number % 2
     ...
-    time.sleep(1)
+    time.sleep(1 + is_odd * 2)
     ...
     end_time = time.time()
     log.info("Finished processing message %r, sending ack!", body)
