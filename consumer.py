@@ -42,6 +42,7 @@ def process_new_message(
 
 
 def consume_messages(channel: "BlockingChannel") -> None:
+    channel.basic_qos(prefetch_count=1)
     channel.basic_consume(
         queue=MQ_ROUTING_KEY,
         on_message_callback=process_new_message,
