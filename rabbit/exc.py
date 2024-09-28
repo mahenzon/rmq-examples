@@ -1,0 +1,2 @@
+class RabbitException(Exception):
+    pass
