@@ -3,6 +3,8 @@ __all__ = (
     "EmailUpdatesRabbit",
     "SimpleRabbitMixin",
     "SimpleRabbit",
+    "WeatherRabbitMixin",
+    "WeatherRabbit",
 )
 
 from .email_updates_rabbit import (
@@ -12,4 +14,8 @@ from .email_updates_rabbit import (
 from .simple_rabbit import (
     SimpleRabbitMixin,
     SimpleRabbit,
+)
+from .weather_rabbit import (
+    WeatherRabbitMixin,
+    WeatherRabbit,
 )
