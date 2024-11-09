@@ -5,6 +5,8 @@ __all__ = (
     "SimpleRabbit",
     "WeatherRabbitMixin",
     "WeatherRabbit",
+    "PaintButtonsRabbitMixin",
+    "PaintButtonsRabbit",
 )
 
 from .email_updates_rabbit import (
@@ -18,4 +20,8 @@ from .simple_rabbit import (
 from .weather_rabbit import (
     WeatherRabbitMixin,
     WeatherRabbit,
+)
+from .paint_button_rabbit import (
+    PaintButtonsRabbitMixin,
+    PaintButtonsRabbit,
 )

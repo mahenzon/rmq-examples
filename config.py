@@ -23,6 +23,13 @@ MQ_QUEUE_WEATHER_UPDATES_TTL = 60_000  # TTL of 60 seconds
 MQ_DLQ_NAME_EXPIRED_WEATHER_UPDATES = "q-expired-weather-updates"
 MQ_DLQ_EXPIRED_WEATHER_UPDATES_TTL = 120_000  # TTL of 2 minutes
 
+MQ_EXCHANGE_PAINT_BUTTON_TASKS = "x-paint-button-tasks"
+MQ_QUEUE_NAME_PAINT_BUTTON_TASKS = "q-paint-button-tasks"
+MQ_DLX_NAME_FAILED_TO_PAINT_BUTTON_TASKS = "dlx-failed-to-paint-button-tasks"
+MQ_DLQ_NAME_FAILED_TO_PAINT_BUTTON_TASKS = "dlq-failed-to-paint-button-tasks"
+MQ_FAILED_TO_PAINT_BUTTON_TASKS_RETRY_IN_SECONDS = 30
+MQ_QUEUE_NAME_NOT_SOLVED_PAINT_BUTTON_TASKS = "q-not-solved-paint-button-tasks"
+
 
 # DEFAULT_LOG_FORMAT = "[%(asctime)s.%(msecs)03d] %(funcName)20s %(module)s:%(lineno)d %(levelname)-8s - %(message)s"
 # DEFAULT_LOG_FORMAT = "%(name)s %(module)s:%(lineno)d %(levelname)-6s - %(message)s"
